@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffffff;
+    color: #ad1818;
+}
+.logo {
+ 
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    margin-right: 15PX;
+    border-radius: 50%;
+  }
+  
+
+/* Header Styling */
+header {
+    background-color: #ffce67;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: #e51f0d;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #e51f0d;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin:  0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0c0b0b;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #d22212;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.recipe {
+
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe h3 {
+    color: #333;
+}
+
+.recipe ul {
+    list-style-type: circle;
+    margin: 1px;
+    padding-left: 2px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ffce67;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer  {
+    color: #e51f0d;
+    text-align: center;
+}
+p
+{
+    text-align:left;
+    text-size-adjust: 10px;
+}
+article{
+    text-align:left ;
+    text-size-adjust: 10px;
+    text-rendering: auto;
+}
+
+body{
+    color: #e91111;
+
+
+    font-weight: bolder;
+    
+}
+h1{
+    color: #ffffff;
+}
+footer p{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+#age-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#age-filter label {
+    font-size: 2.0rem;
+}
+
+#age-filter select {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+
+
+
+.recipe-card {
+    width: 800px;
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  /* Image within the recipe card */
+  .recipe-card img {
+    width: 100%;  /* Full width of the card */
+    height: 400px; /* Fixed height */
+    object-fit: cover;  /* Ensure the image covers the area without distortion */
+    border-radius: 40px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* Hover effect for the card */
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Recipe title */
+  .recipe-card h2 {
+    font-size: 2%;
+    color: #333;
+  }
+
+
+
+
+
+
+
+  
+ 

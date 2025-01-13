@@ -1,0 +1,128 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Logo Alignment</title>
+      <link rel="stylesheet" href="1.css">
+      <style>
+        .navbar {
+          display: flex; 
+          justify-content: space-between; 
+          align-items: center; 
+          padding: 10px;
+          background-color: #ffce67;
+        }
+    
+       
+        .nav-buttons {
+          display: flex; 
+          gap: 20px; 
+        }
+    
+        .nav-buttons a {
+          text-decoration: none;
+          padding: 15px 20px;
+          background-color: #000000;
+          color: rgb(255, 255, 255);
+          border-radius: 10px;
+        }
+    
+        
+        .logo {
+          width: 150px; 
+          height: auto;
+        }
+      
+          /*sliding img*/
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+          }
+          
+          .slider-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out; /* Smooth transition */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .slider-content {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            z-index: 1;
+            position: absolute; /* Ensure the text is absolutely positioned */
+            top: 30%; /* Adjust this value to move the text up/down */
+            left: 50%;
+            transform: translate(-50%, -30%); /* Center the text horizontally */
+          }
+        
+  
+          
+          h1 {
+            font-size: 5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border: 10px;
+            border-top: 0px;
+            text-align: center;
+            top: 20%;
+            color: red;
+          }
+          
+          p {
+            font-size: 2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+          }
+          
+          
+
+      </style>
+    </head>
+    <body>
+      
+  <div class="navbar">
+        <div class="nav-buttons">
+           <nav>
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="RE.html">Recipes</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+                  <li><a href="login.html">Signup/Login </a></li>
+                  
+              </ul>
+          </nav>
+  
+        </div>
+        <div class="logo-container">
+          <img src="logo0.png" alt="Company Logo" class="logo">
+        </div>
+      </div>
+      <div class="slider-container">
+  
+        <div class="slider-content">
+          <h1>Cook<BR> Create<BR> Celebrate&#128151</h1>
+            <p>is the perfect place for new moms who want to introduce their little ones to the joy of food.!!! </p>
+          
+        </div>
+        
+ <script src="script.js"></script>
+        
+        
+ 
+</body>
+</html>

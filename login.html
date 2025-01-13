@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Cooking website - Login/Signup</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-image: url('bcglo.avif');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .form-box {
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #ff6b6b;
+        }
+        
+        .toggle-box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .toggle {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 50%;
+            transition: background-color 0.3s ease;
+        }
+        
+        .toggle.active {
+            background-color: #ff9051;
+        }
+        
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .form.hidden {
+            display: none;
+        }
+        
+        input {
+            padding: 10px;
+            border: 2px solid #ff6b6b;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .form-btn {
+            background-color: #ff9051;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .form-btn:hover {
+            background-color: #ff6b6b;
+        }
+        
+        .forgot {
+            font-size: 12px;
+            color: #ff6b6b;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .terms {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color:  #ff6b6b;
+        }
+        
+        .terms input {
+            margin-right: 5px;
+        }
+        
+        .terms a {
+            color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Welcome to <span>Kids Cooking website</span></h1>
+    
+            <div class="toggle-box">
+                <button id="login-btn" class="toggle active">Login</button>
+                <button id="signup-btn" class="toggle">Sign Up</button>
+            </div>
+            
+            <div id="login-form" class="form">
+                <input type="text" id="login-username" placeholder="Enter your username" required>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                <button class="form-btn" id="login-submit">Submit</button>
+                <a class="forgot" id="forgot-password">Oops, forgot your password?</a>
+            </div>
+            
+            <div id="signup-form" class="form hidden">
+                <input type="text" id="signup-username" placeholder="Choose your username" required>
+                <input type="password" id="signup-password" placeholder="Create a strong password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                </div>
+                <button class="form-btn" id="signup-submit">Join the  kids cooking website!!! </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        //login page
+ // Toggle between login and signup forms
+ const loginBtn = document.getElementById('login-btn');
+ const signupBtn = document.getElementById('signup-btn');
+ const loginForm = document.getElementById('login-form');
+ const signupForm = document.getElementById('signup-form');
+ 
+ loginBtn.addEventListener('click', () => {
+     loginForm.classList.remove('hidden');
+     signupForm.classList.add('hidden');
+     loginBtn.classList.add('active');
+     signupBtn.classList.remove('active');
+ });
+ 
+ signupBtn.addEventListener('click', () => {
+     signupForm.classList.remove('hidden');
+     loginForm.classList.add('hidden');
+     signupBtn.classList.add('active');
+     loginBtn.classList.remove('active');
+ });
+
+ // Function to store user data in localStorage
+ function storeUserData(username, password) {
+     let users = JSON.parse(localStorage.getItem('users')) || [];
+     users.push({ username, password });
+     localStorage.setItem('users', JSON.stringify(users));
+ }
+
+ // Function to handle signup
+ document.getElementById('signup-submit').addEventListener('click', () => {
+     const username = document.getElementById('signup-username').value;
+     const password = document.getElementById('signup-password').value;
+     const confirmPassword = document.getElementById('confirm-password').value;
+
+     // Check if passwords match
+     if (password === confirmPassword) {
+         storeUserData(username, password);
+         alert('Signup successful!');
+         document.getElementById('signup-form').reset();
+     } else {
+         alert('Passwords do not match!');
+     }
+ });
+
+ // Function to handle login
+ document.getElementById('login-submit').addEventListener('click', () => {
+     const username = document.getElementById('login-username').value;
+     const password = document.getElementById('login-password').value;
+
+     const users = JSON.parse(localStorage.getItem('users')) || [];
+     const user = users.find(user => user.username === username && user.password === password);
+
+     if (user) {
+         alert('Login successful!');
+     } else {
+         alert('Invalid credentials!');
+     }
+ });
+
+ // Function to handle forgot password
+ document.getElementById('forgot-password').addEventListener('click', () => {
+     const username = prompt("Please enter your username to reset your password:");
+     const users = JSON.parse(localStorage.getItem('users')) || [];
+     const user = users.find(user => user.username === username);
+
+     if (user) {
+         const newPassword = prompt("Enter your new password:");
+         const confirmPassword = prompt("Confirm your new password:");
+         
+         if (newPassword === confirmPassword) {
+             user.password = newPassword; // Update password
+             localStorage.setItem('users', JSON.stringify(users));
+             alert('Password updated successfully!');
+         } else {
+             alert('Passwords do not match!');
+         }
+     } else {
+         alert('Username not found!');
+     }
+ });
+
+
+    </script>
+</body>
+</html>

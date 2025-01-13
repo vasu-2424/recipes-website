@@ -1,0 +1,1290 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids' Recipes - 5 Months to 10 Years</title>
+   
+    <link rel="stylesheet" href="1.css">
+    <style>
+        body {
+            background-image: url("logo.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            
+          }
+          h1{
+            color: red;
+            font-size: 80px;
+            background-color: #ffce67;
+          }
+          label{
+            color: rgb(226, 216, 216);
+            font-size: 30px;
+            
+          }
+          h3{
+            color: red;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: dotted;
+            text-transform:uppercase;
+            background-color: #bb8d1a;
+          }
+          #ageGroup, button {
+            width: 190px; /* Same width */
+            height: 50px; /* Same height */
+            background-color:#333; /* Same background color */
+            color: white; /* Font color */
+            font-size: 2rem; /* Font size */
+            border: none; /* Remove border */
+            text-align: center;
+            border-radius:0%;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+       
+        
+        
+        
+        
+          
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kids Recipes</h1>
+        
+    </header>
+
+    <section id="age-filter">
+        <label for="age">Filter by age group: </label>
+        <select id="age" onchange="filterRecipes()">
+            <option value="all">All</option>
+            <option value="5-12m">5-12 months</option>
+            <option value="1-3y">1-3 years</option>
+            <option value="4-6y">4-6 years</option>
+            <option value="7-10y">7-10 years</option>
+            
+            
+
+            <div>
+                <label for="ageGroup">Filter by age group:</label>
+                <select id="ageGroup">
+                    
+                </select>
+                
+                <!-- Button for 10+ years -->
+                <button onclick="window.location.href='recipes.html'" style="margin-left: 10px;">10+ years</button>
+            </div>
+            
+            
+            
+        </select>
+    </section>
+
+    <section id="recipes">
+        <!-- Recipe for 5-12 months -->
+        <article class="recipe" data-age="5-12m">
+            <div class="recipe-card">
+                <img src="sweet potatao.jpeg" alt="Recipe 1">
+             
+                <h3>Mashed Sweet Potato</h3>
+                        <p><strong>Age:</strong> 5-12 months</p>
+                        <p>A simple mashed sweet potato, <br>
+                            perfect for babies starting on solid foods.</p><br>
+                        <ul><br>
+                            process:<br>
+                            1 small sweet potato<br>
+                            Water or breastmilk/formula<br>
+                        </ul><br>
+                        
+                        <p>Nutritional Benefits:<br>
+            
+                            Vitamin A for eye health.<br>
+                            Fiber for better digestion.</p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="rice.webp" alt="Recipe 2">
+             
+                <h3>rice cereal</h3>
+                <p><strong>Age:</strong> 5-12 months</p>
+                <p>Ingredients:<br>
+            
+                    2 tbsp rice (soaked for 30 minutes)<br>
+                    1 cup water<br>
+                    Breast milk/formula (optional).</p><br>
+                <ul><br>
+                    Process:<br>
+            
+                        Wash and soak the rice.<br>
+                       Boil rice with water until soft. <br>
+                        Blend it to a smooth consistency.<br>
+                       Add breast milk/formula if needed.<br>
+                    
+                </ul><br>
+                
+                <p>Nutritional Benefits:<br>
+            
+                    Rich in carbohydrates for energy.<br>
+                    Easily digestible and suitable for babies transitioning to solids.
+                    </p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="carrrot.jpg" alt="Recipe 3">
+             
+                <h3>mashed carrot</h3>
+                <p><strong>Age:</strong> 5-12 months</p>
+                <p>Ingredients:<br>
+            
+                    1 medium carrot<br>
+            Water for boiling</p><br>
+                <ul><br>
+                    Process:<br>
+            
+                       Peel and chop the carrot.<br>
+                        Steam/boil until soft.<br>
+                        Mash it to a smooth consistency.<br>
+                       Add water if necessary to make it thinner<br>
+                    
+                </ul><br>
+                
+                <p>Nutritional Benefits:<br>
+            
+                    High-quality protein from paneer for muscle growth.<br>
+            Calcium for strong bones and teeth.
+            
+                    </p>
+              </div>
+              <div class="recipe-card">
+                <img src="moog.jpeg" alt="Recipe 4">
+             
+                <h3>Moong Dal Soup</h3>
+                <p><strong>Age:</strong> 5-12 months</p>
+                <p>Ingredients:<br>
+            
+                    2 tbsp yellow moong dal<br>
+            1 pinch turmeric<br>
+            1 cup water</p>
+                <ul><br>
+                    Process:<br>
+            
+                    Wash and soak the moong dal for 15 minutes.<br>
+                    Boil the dal with water and turmeric until soft.<br>
+                    Strain or mash the dal to a soup-like consistency.<br>
+                    Serve warm.<br>
+                    
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+            
+                    Protein for muscle growth.<br>
+            Iron for cognitive development.
+            
+                    </p>
+              </div>
+              <div class="recipe-card">
+                <img src="apple.jpeg" alt="Recipe 5">
+             
+                <h3>Apple Puree </h3>
+                <p><strong>Age:</strong> 5-12 months</p>
+                <p>Ingredients:<br>
+            
+                    1 apple<br>
+                    Water
+                <ul><br>
+                    Process:<br>
+            
+                    Peel, core, and chop the apple into small pieces.<br>
+            Steam or boil the apple until soft.<br>
+            Puree the apple until smooth, adding water if necessary.
+                    
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+            
+                    Vitamin C for immunity.<br>
+                    Fiber for better digestion.
+            
+                    </p>
+              </div>
+              <div class="recipe-card">
+                <img src="ragi.jpg" alt="Recipe 6">
+             
+                <h3>ragi java</h3>
+                <p><strong>Age:</strong> 5-12 months</p>
+                <p>Ingredients:<br>
+            
+                    2 tbsp Ragi flour<br>
+            2 cups Water<br>
+            1-2 tbsp Jaggery (or sugar)<br>
+            1/2 cup Milk (optional)<br>
+            A pinch of Cardamom powder (optional)<br>
+                <ul><br>
+                    Process:<br>
+            
+                    Mix ragi flour with 1/4 cup water to make a smooth paste.<br>
+            Boil 1.5 cups of water, then stir in the ragi paste.<br>
+            Cook for 5-7 minutes until thick.<br>
+            Add jaggery and cardamom (optional), stir until dissolved.<br>
+            Add milk and ghee (optional) for a creamier version.<br>
+            Serve hot.
+                    
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+            
+                    High calcium (for bones)<br>
+            Good fiber (for digestion)<br>
+            Iron (boosts blood health)
+            
+                    </p>
+              </div>
+            
+            
+
+            
+  <div class="recipe-card">
+    <img src="kheer.jpeg" alt="Recipe 7">
+ 
+    <h3>Suji (Semolina) Kheer</h3>
+    <p><strong>Age:</strong> 5-12 months</p>
+    <p>Ingredients:<br>
+
+        2 tbsp suji (semolina)<br>
+1 cup water<br>
+1/2 tsp ghee<br>
+1 tsp jaggery (optional for sweetness)<br>
+    <ul><br>
+        Process:<br>
+
+        Heat ghee in a pan and roast the suji until golden brown.<br>
+Add water and cook until the suji absorbs all the water.<br>
+Add jaggery if needed, and stir until dissolved.<br>
+        
+    </ul><br>
+   
+    <p>Nutritional Benefits:<br>
+        Carbohydrates for energy.<br>
+        Healthy fats from ghee for brain development
+
+        </p>
+  </div>
+
+  <div class="recipe-card">
+    <img src="soup.jpg" alt="Recipe 8">
+ 
+    <h3>Mixed Vegetable Soup</h3>
+    <p><strong>Age:</strong> 5-12 months</p>
+    <p>Ingredients:<br>
+
+        1 small carrot<br>
+1 small potato<br>
+1/4 cup peas<br>
+1/2 cup water<br>
+
+    <ul><br>
+        Process:<br>
+
+        Wash, peel, and chop the vegetables.<br>
+Boil the vegetables in water until soft.<br>
+Blend or mash the vegetables into a smooth soup.<br>
+Strain if necessary and serve warm.<br>
+        
+    </ul><br>
+   
+    <p>Nutritional Benefits:<br>
+        Vitamins and minerals from vegetables for overall growth.<br>
+Fiber for healthy digestion.
+        
+        </p>
+  </div>
+
+
+  <div class="recipe-card">
+    <img src="oats.jpeg" alt="Recipe 9">
+ 
+    <h3>Oats Porridge</h3>
+    <p><strong>Age:</strong> 5-12 months</p>
+    <p>Ingredients:<br>
+        2 tbsp oats<br>
+        1 cup water<br>
+        1/2 cup milk (optional)<br>
+
+    <ul><br>
+        Process:<br>
+
+        Add oats to boiling water and cook until soft.<br>
+Blend the cooked oats to make them smoother, if needed.<br>
+Add milk for a creamier texture and serve warm.
+        
+    </ul><br>
+   
+    <p>Nutritional Benefits:<br>
+        Fiber for digestive health.<br>
+        Carbohydrates for energy.
+        </p>
+  </div>
+
+
+  <div class="recipe-card">
+    <img src="pum.jpeg" alt="Recipe 10">
+ 
+    <h3>Steamed Pumpkin with Cinnamon</h3>
+    <p><strong>Age:</strong> 5-12 months</p>
+    <p>Ingredients:<br>
+        1 small pumpkin (peeled and chopped)<br>
+A pinch of cinnamon
+
+    <ul><br>
+        Process:<br>
+        Steam the pumpkin pieces until soft.<br>
+        Mash the steamed pumpkin and sprinkle a small pinch of cinnamon.<br>
+        Serve warm.
+        
+    </ul><br>
+   
+    <p>Nutritional Benefits:<br>
+        Vitamin A for eye health.<br>
+Antioxidants for immunity.
+        </p>
+  </div> </article>
+
+        <!-- Recipe for 1-3 years -->
+        <article class="recipe" data-age="1-3y">
+            <div class="recipe-card">
+                <img src="banpan.jpeg" alt="Recipe 1">
+             
+                <h3>Banana Oat Pancakes</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    1 ripe banana<br>
+            1 egg<br>
+            ¼ cup rol<br>
+            led oats<br>
+            A pinch of cinnamon<br>
+            A splash of milk (optional)<br>
+            
+                <ul><br>
+                    Process:<br>
+                    Mash the banana in a bowl.<br>
+            Add the egg and oats, and mix until combined. Add a splash of milk if the batter is too thick.<br>
+            Heat a non-stick pan over medium heat and pour small portions of the batter.<br>
+            Cook each side for about 2 minutes, until golden brown.<br>
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Bananas: Potassium, Vitamin C, and fiber.<br>
+            Oats: Fiber, iron, and magnesium.<br>
+            Eggs: Protein, Vitamin D, and healthy fats.<br>
+            
+                    </p>
+              </div>
+
+
+              <div class="recipe-card">
+                <img src="kichi.webp" alt="Recipe 2">
+             
+                <h3>Vegetable Khichdi </h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    ¼ cup rice<br>
+¼ cup yellow lentils (moong dal)<br>
+½ carrot (chopped)<br>
+½ potato (chopped)<br>
+A pinch of turmeric<br>
+A pinch of cumin seeds<br>
+1 teaspoon ghee (clarified butter)<br>
+Water as needed
+            
+                <ul><br>
+                    Process:<br>
+                    Rinse the rice and lentils.<br>
+In a pressure cooker, heat ghee and add cumin seeds and turmeric.<br>
+Add the chopped vegetables, rice, and lentils.<br>
+Add 1 cup of water and cook for 3-4 whistles.<br>
+Mash lightly with a spoon and serve warm.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Lentils: Protein, iron, and fiber.<br>
+Rice: Carbohydrates and B-vitamins.<br>
+Vegetables: Vitamins A and C, and fiber
+            
+                    </p>
+              </div>
+
+
+              <div class="recipe-card">
+                <img src="ava.jpeg" alt="Recipe 3">
+             
+                <h3>Avocado and Sweet Potato Mash </h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    1 small sweet potato<br>
+½ ripe avocado
+            
+                <ul><br>
+                    Process:<br>
+                    Steam or boil the sweet potato until soft.<br>
+                    Mash the sweet potato with a fork.<br>
+                    Mix in mashed avocado and serve.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Sweet Potatoes: Vitamin A, fiber, and potassium.<br>
+Avocados: Healthy fats, Vitamin E, and folate.
+            
+                    </p>
+              </div>
+
+
+
+              <div class="recipe-card">
+                <img src="mini.jpeg" alt="Recipe 4">
+             
+                <h3> Mini Veggie Patties</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    1 small potato (boiled and mashed)<br>
+¼ cup grated carrot<br>
+¼ cup finely chopped sp<br>inach
+2 tablespoons breadcrumbs<br>
+1 tablespoon grated cheese (optional)<br>
+A pinch of salt
+                <ul><br>
+                    Process:<br>
+                    In a bowl, mix mashed potatoes, carrot, spinach, breadcrumbs, and cheese.<br>
+Form small patties from the mixture.<br>
+Heat a little oil in a non-stick pan and cook the patties on both sides until golden brown.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Potatoes: Carbohydrates and Vitamin C.<br>
+Spinach: Iron, folate, and fiber.<br>
+Carrots: Vitamin A and fiber.
+            
+                    </p>
+              </div>
+
+
+              
+              <div class="recipe-card">
+                <img src="fru.jpeg" alt="Recipe 5">
+             
+                <h3>  Fruit Yogurt Parfait</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    ½ cup plain whole milk yogurt<br>
+½ banana (sliced)<br>
+¼ cup berries (blueberries or strawberries)<br>
+1 tablespoon crushed nuts (almonds, walnuts) – optional
+                <ul><br>
+                    Process:<br>
+                    Layer yogurt, bananas, and berries in a small bowl or cup.<br>
+Sprinkle nuts on top if desired and serve.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Yogurt: Calcium, probiotics, and protein.<br>
+                    Bananas & Berries: Vitamins C, fiber, and antioxidants.
+            
+                    </p>
+              </div>
+
+             <div class="recipe-card">
+                <img src="chi.jpg" alt="Recipe 6">
+             
+                <h3>  Chicken and Vegetable Soup</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    50g chicken breast (finely chopped)<br>
+1 small carrot (chopped)<br>
+¼ cup peas<br>
+¼ small onion (chopped)<br>
+1 garlic clove (minced)<br>
+1 teaspoon olive oil<br>
+1½ cups water or chicken broth
+                <ul><br>
+                    Process:<br>
+                    Heat olive oil in a pot and sauté onion and garlic.<br>
+Add chicken and cook until it turns white.<br>
+Add carrots, peas, and broth. Simmer for 15-20 minutes until the vegetables are soft.<br>
+Mash the vegetables slightly or blend for a smoother consistency.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Chicken: Protein and B-vitamins.<br>
+              Vegetables: Vitamins A and C, fiber
+                    </p>
+              </div>
+
+
+              <div class="recipe-card">
+                <img src="p1.jpeg" alt="Recipe 7">
+             
+                <h3>  Cheesy Broccoli Pasta</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    ¼ cup small pasta (e.g., macaroni)<br>
+¼ cup broccoli florets (finely chopped)<br>
+1 tablespoon grated cheese<br>
+1 teaspoon butter
+                <ul><br>
+                    Process:<br>
+                    Cook the pasta according to package instructions.<br>
+Steam the broccoli until soft.<br>
+Drain the pasta, and add broccoli, cheese, and butter. Stir until the cheese melts.<br>
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Pasta: Carbohydrates and B-vitamins.<br>
+Broccoli: Vitamin C, calcium, and fiber.<br>
+Cheese: Calcium and protein.
+                    </p>
+              </div>
+
+
+
+              <div class="recipe-card">
+                <img src="q.jpeg" alt="Recipe 8">
+             
+                <h3>  Spinach and Cheese Quesadilla</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    1 small whole wheat tortilla<br>
+¼ cup spinach (chopped)<br>
+2 tablespoons grated cheese<br>
+1 teaspoon butter
+                <ul><br>
+                    Process:<br>
+                    Heat butter in a pan and sauté the spinach until wilted.<br>
+Place the spinach and cheese on one half of the tortilla.<br>
+Fold the tortilla and cook on both sides in a pan until golden brown and the cheese melts.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    Spinach: Iron, folate, and fiber.<br>
+                    Cheese: Calcium and protein.<br>
+                    Whole Wheat Tortilla: Fiber and B-vitamins.
+                    </p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="muf.jpg" alt="Recipe 9">
+             
+                <h3>  Apple and Carrot Muffins</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    ½ cup grated apple<br>
+½ cup grated carrot<br>
+¼ cup whole wheat flour<br>
+1 egg<br>
+1 tablespoon olive oil or melted butter<br>
+1 teaspoon baking powder<br>
+A pinch of cinnamon
+                <ul><br>
+                    Process:<br>
+                    HPreheat the oven to 350°F (175°C).<br>
+                    In a bowl, mix the grated apple, carrot, flour, baking powder, and cinnamon.<br>
+                    Add the egg and oil, and mix until combined.<br>
+                    Pour the batter into mini muffin tins and bake for 15-20 minutes.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    Apples: Fiber and Vitamin C.<br>
+Carrots: Vitamin A and antioxidants.<br>
+Whole Wheat Flour: Fiber and iron.
+                    </p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="dal.jpeg" alt="Recipe 10">
+             
+                <h3> Mashed Lentils with Rice</h3>
+                <p><strong>Age:</strong> 1-3 years</p>
+                <p>Ingredients:<br>
+                    ¼ cup red lentils<br>
+                    ¼ cup rice<br>
+                    1 small tomato (chopped)<br>
+                    A pinch of turmeric<br>
+                    1 teaspoon ghee
+                <ul><br>
+                    Process:<br>
+                    Rinse the lentils and rice.<br>
+In a pot, add lentils, rice, turmeric, tomato, and 1 cup of water.<br>
+Cook on low heat until soft (about 20-25 minutes).<br>
+Mash the mixture and add ghee before serving.
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    Lentils: Protein, iron, and fiber.<br>
+Rice: Carbohydrates and B-vitamins.<br>
+Tomatoes: Vitamin C and antioxidants.
+                    </p>
+              </div></article> 
+
+
+
+        <!-- Recipe for 4-6 years -->
+        <article class="recipe" data-age="4-6y">
+            <div class="recipe-card">
+                <img src="protein.jpg" alt="Recipe 1">
+             
+                <h3>  Protein Balls
+                </h3>
+                <p><strong>Age:</strong> 4-6 years</p>
+                <p>Ingredients:<br>
+                    1-1/2 cups quick-cooking oats<br>
+
+                    1/2 cup chia seeds<br>
+                    
+                    1/2 cup honey or maple syrup<br>
+                    
+                    1/2 cup creamy peanut butter<br>
+                    
+                    1/4 cup vanilla or chocolate protein powder<br>
+                    
+                    1/4 cup miniature semisweet chocolate chips
+                    
+                    
+                <ul><br>
+                    Process:<br>
+                    In a large bowl, combine all ingredients. <br>Refrigerate 1 hour or until firm enough to roll. <br>Shape into 1-1/2-in. balls.<br> Store in the refrigerator.
+
+
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    1 piece: 82 calories<br> 4g fat (1g saturated fat)<br> 0 cholesterol<br> 23mg sodium<br> 11g carbohydrate (6g sugars, 2g fiber)<br> 2g protein.
+                    </p>
+              </div>
+
+
+              <div class="recipe-card">
+                <img src="smo.jpg" alt="Recipe 2">
+             
+                <h3> Blueberry Banana Smoothie 
+
+
+
+
+                </h3>
+                <p><strong>Age:</strong> 4-6 years</p>
+                <p>Ingredients:<br>
+                    1 cup unsweetened almond milk<br>
+
+1 medium banana<br>
+
+1/2 cup frozen unsweetened blueberries<br>
+
+1/4 cup instant plain oatmeal<br>
+
+1 teaspoon maple syrup<br>
+
+1/2 teaspoon ground cinnamon<br>
+
+Dash sea salt
+
+
+
+                    
+                    
+                <ul><br>
+                    Process:<br>
+                    Place the first 6 ingredients in a blender<br> cover and process until smooth<br> Pour into 2 chilled glasses<br> sprinkle with sea salt.<br>Serve immediately.
+
+
+                </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    1 cup: 153 calories<br> 3g fat (0 saturated fat)<br>0 cholesterol<br> 191mg sodium<br> 31g carbohydrate (13g sugars, 5g fiber)<br> 3g protein. 
+Diabetic exchanges: 2 starch.
+                    </p>
+              </div>
+
+
+              <div class="recipe-card">
+                <img src="ch.jpg" alt="Recipe 3">
+             
+                <h3> Loaded Baked Potato Dip </h3>
+                <p><strong>Age:</strong> 4-6 years</p>
+                <p>Ingredients:<br>2 cups reduced-fat sour cream<br>
+
+                    2 cups shredded reduced-fat cheddar cheese<br>
+                    
+                    8 center-cut bacon or turkey bacon strips, chopped and cooked<br>
+                    
+                    1/3 cup minced fresh chives<br>
+                    
+                    2 teaspoons Louisiana-style hot sauce<br>
+                    
+                    Hot cooked waffle-cut fries<br>
+                    <ul><br>
+                    Process:<br>
+                    In a small bowl mix<br> the first 5 ingredients until blended;<br> refrigerate until serving. <br>Serve with waffle fries.
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    1/4 cup (calculated without fries): 149 calories <br> 10g fat (6g saturated fat),<br> 38mg cholesterol,<br> 260mg sodium, <br>4g carbohydrate (4g sugars, 0 fiber),<br> 11g protein.
+                    </p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="br.jpg" alt="Recipe 4">
+             
+                <h3> peanut bread </h3>
+                <p><strong>Age:</strong> 4-6 years</p>
+                <p>Ingredients:<br>
+                    1/4 cup creamy peanut butter<br>
+
+2 tablespoons honey<br>
+
+1/4 teaspoon ground cinnamon<br>
+
+2 tablespoons miniature semisweet chocolate chips<br>
+
+4 slices whole wheat bread<br>
+
+1 medium banana, thinly sliced
+
+                    <ul><br>
+                    Process:<br>
+                    Mix peanut butter<br> honey and cinnamon;<br> stir in chocolate chips.<br> Spread over bread.<br> Layer 2 bread slices with banana slices; <br>top with remaining bread.<br> If desired, cut into shapes using cookie cutters.
+
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                   
+                    sandwich: 502 calories,<br> 22g fat (6g saturated fat), <br>0 cholesterol,<br> 394mg sodium,<br> 69g carbohydrate (36g sugars, 7g fiber),<br> 15g protein.
+                    </p>
+                </div>
+
+
+
+                <div class="recipe-card">
+                    <img src="4to6.jpeg" alt="Recipe 5">
+                 
+                    <h3> Chicken and Veggie Wrap </h3>
+                    <p><strong>Age:</strong> 4-6 years</p>
+                    <p>Ingredients:<br>
+                        1 whole wheat tortilla<br>
+                        1/4 cup cooked shredded chicken<br>
+                        1/4 cup grated cucumber<br>
+                        1 tbsp hummus<br>
+    
+                        <ul><br>
+                        Process:<br>
+                        Spread hummus on the tortilla<br>
+Add chicken and cucumber<br>
+Roll up the tortilla and serve<br>
+    
+                     </ul><br>
+                   
+                    <p>Nutritional Benefits:<br>
+                       
+                        Chicken is a good source of lean protein<br>
+Cucumber provides hydration and fiber<br>
+Whole wheat tortilla adds fiber for digestion<br>
+
+                        </p>
+                  </div>
+
+                  <div class="recipe-card">
+                    <img src="4to66.jpeg" alt="Recipe 6">
+                 
+                    <h3> Sweet Corn and Cheese Balls </h3>
+                    <p><strong>Age:</strong> 4-6 years</p>
+                    <p>Ingredients:<br>
+                        1/2 cup boiled sweet corn<br>
+1/4 cup grated cheese<br>
+2 tbsp breadcrumbs<br>
+Salt and pepper to taste<br>
+Oil for shallow frying<br>
+                        <ul><br>
+                        Process:<br>
+                        Mash sweet corn and mix with cheese, breadcrumbs, salt, and pepper<br>
+Form small balls from the mixture<br>
+Shallow fry until golden brown<br>
+
+    
+                     </ul><br>
+                   
+                    <p>Nutritional Benefits:<br>
+                       
+                        Corn provides fiber and vitamins<br>
+                        Cheese adds protein and calcium<br>
+                        Breadcrumbs offer carbohydrates for energy<br>
+                        
+
+                        </p>
+                  </div>
+    
+                  <div class="recipe-card">
+                    <img src="4to67.jpeg" alt="Recipe 7">
+                 
+                    <h3> Oatmeal Cookies </h3>
+                    <p><strong>Age:</strong> 4-6 years</p>
+                    <p>Ingredients:<br>
+                        1/2 cup oats<br>
+1/4 cup mashed banana<br>
+1 tbsp honey<br>
+1/4 tsp cinnamon<br>
+                        <ul><br>
+                        Process:<br>
+                        Preheat the oven to 180°C (350°F)<br>
+                        Mix all ingredients to form a dough<br>
+                        Shape into cookies and bake for 12-15 minutes<br>
+    
+                     </ul><br>
+                   
+                    <p>Nutritional Benefits:<br>
+                        Oats are a great source of fiber<br>
+                        Bananas provide natural sweetness and potassium<br>
+                        Honey adds antioxidants<br>
+                        
+
+                        </p>
+                  </div>
+
+
+
+                  <div class="recipe-card">
+                    <img src="4to68.jpeg" alt="Recipe 8">
+                 
+                    <h3> Baked Fish Sticks </h3>
+                    <p><strong>Age:</strong> 4-6 years</p>
+                    <p>Ingredients:<br>
+                        1/2 cup fish fillets<br>
+1/4 cup breadcrumbs<br>
+1 tbsp grated Parmesan<br>
+1 tsp olive oil<br>
+                        <ul><br>
+                        Process:<br>
+                        
+                        Coat the fish with breadcrumbs and Parmesan<br>
+                        Bake at 200°C (400°F) for 15 minutes<br>
+                     </ul><br>
+                   
+                    <p>Nutritional Benefits:<br>
+                        Fish provides omega-3 fatty acids for brain health<br>
+Breadcrumbs add fiber<br>
+Parmesan provides protein and calcium<br>
+                        
+
+                        </p>
+                  </div>
+    
+                  <div class="recipe-card">
+                    <img src="4to69.jpeg" alt="Recipe 9">
+                 
+                    <h3> Mini Pizza Bagels</h3>
+                    <p><strong>Age:</strong> 4-6 years</p>
+                    <p>Ingredients:<br>
+                        2 mini whole wheat bagels<br>
+1/4 cup pizza sauce<br>
+1/4 cup shredded mozzarella cheese<br>
+1/4 cup diced bell peppers and tomatoes<br>
+                        <ul><br>
+                        Process:<br>
+                        
+                        Preheat the oven to 180°C (350°F)<br>
+Spread pizza sauce on the bagel halves<br>
+Add cheese, bell peppers, and tomatoes<br>
+Bake for 8-10 minutes until cheese melts<br>
+                     </ul><br>
+                   
+                    <p>Nutritional Benefits:<br>
+                       
+Whole wheat bagels provide complex carbohydrates<br>
+Bell peppers and tomatoes are rich in vitamin C<br>
+Cheese provides calcium for growing bones<br>
+                        
+
+                        </p>
+                  </div>
+    
+                  <div class="recipe-card">
+                    <img src="4to610.jpeg" alt="Recipe 10">
+                 
+                    <h3>Blueberry Yogurt Popsicles </h3>
+                    <p><strong>Age:</strong> 4-6 years</p>
+                    <p>Ingredients:<br>
+                        1/2 cup blueberries<br>
+1/2 cup plain yogurt<br>
+1 tbsp honey<br>
+                        <ul><br>
+                        Process:<br>
+                        Blend blueberries, yogurt, and honey<br>
+Pour into popsicle molds and freeze for 4 hours<br>
+                     </ul><br>
+                   
+                    <p>Nutritional Benefits:<br>
+                        Blueberries are rich in antioxidants<br>
+                        Yogurt contains calcium and probiotics<br>
+                        Honey adds natural sweetness<br>
+                        
+
+                        </p>
+                  </div></article>
+    
+
+
+
+        <!-- Recipe for 7-10 years -->
+        <article class="recipe" data-age="7-10y">
+            <div class="recipe-card">
+                <img src="7to10 1.jpg" alt="Recipe 1">
+             
+                <h3>Tuna Salad Sandwich</h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    2 slices whole wheat bread<br>
+                    1/2 can tuna in water, drained<br>
+                    1 tbsp mayonnaise<br>
+                    1/4 cup grated carrots<br>
+                    Lettuce leaves<br>  <ul><br>
+                    Process:<br>
+                    Mix tuna, mayonnaise, and grated carrots<br>
+Spread the mixture on one slice of bread<br>
+Add lettuce and top with the second slice<br>
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Tuna is rich in omega-3 fatty acids and protein<br>
+                    Carrots provide vitamin A for eye health<br>
+                    Whole wheat bread adds fiber for digestion<br>
+                    
+                    </p>
+              </div>
+            
+              <div class="recipe-card">
+                <img src="7to102.jpeg" alt="Recipe 2">
+             
+                <h3>Cheesy Quesadilla</h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    2 whole wheat tortillas<br>
+1/2 cup shredded cheddar cheese<br>
+1/4 cup chopped bell peppers<br>
+1/4 cup chopped onions<br>
+1 tbsp butter<br>
+Optional toppings: sour cream, salsa, or guacamole<ul><br>
+                    Process:<br>
+                    Heat a pan over medium heat and add a little butter<br>
+Place one tortilla in the pan<br>
+Sprinkle cheese evenly across the tortilla<br>
+Add chopped bell peppers and onions on top of the cheese<br>
+Place the second tortilla on top to form a sandwich<br>
+Cook for 2-3 minutes until the bottom tortilla is golden brown<br>
+Carefully flip the quesadilla and cook for another 2-3 minutes<br>
+Remove from the pan, slice into wedges, and serve with your favorite toppings<br>
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    Cheddar Cheese: High in calcium and protein, essential for growing bones and muscle development<br>
+Bell Peppers: Rich in vitamins A and C, contributing to a strong immune system and good vision<br>
+Whole Wheat Tortilla: Provides fiber and complex carbohydrates, supporting digestion and long-lasting energy<br>
+Onions: Offer antioxidants and help improve immune health<br>
+
+                    </p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="7to103.jpeg" alt="Recipe 3">
+             
+                <h3>Quick Taco Wraps</h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    
+                    2 whole wheat tortillas<br>
+1/2 cup cooked ground chicken or beef<br>
+1/4 cup shredded lettuce<br>
+1/4 cup diced tomatoes<br>
+1/4 cup shredded cheese<br>
+2 tbsp sour cream or salsa (optional)<br>  
+<ul><br>
+                    Process:<br>
+                    Warm the tortillas in a pan for 30 seconds<br>
+Spread the cooked ground meat evenly on the tortillas<br>
+Add lettuce, tomatoes, and cheese on top<br>
+Drizzle with sour cream or salsa<br>
+Fold the tortilla and serve immediately<br>
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    
+Chicken/Beef: Provides protein for muscle development<br>
+Lettuce & Tomatoes: Rich in vitamins and fiber for good digestion<br>
+Cheese: Offers calcium and protein for bone health<br>
+Whole Wheat Tortilla: Adds fiber and helps maintain energy levels<br>
+                    </p>
+              </div>
+            
+
+              <div class="recipe-card">
+                <img src="7to104.jpeg" alt="Recipe 4">
+             
+                <h3>Waffle Iron Pizzas</h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    
+                    1 cup pizza dough<br>
+1/4 cup pizza sauce<br>
+1/2 cup shredded mozzarella cheese<br>
+1/4 cup pepperoni or veggies (optional)<br>
+1 tbsp olive oil<br>
+<ul><br>
+                    Process:<br>
+                    Preheat the waffle iron and lightly brush it with olive oil<br>
+                    Roll out pizza dough into small rounds that fit the waffle iron<br>
+                    Place a dough round on the waffle iron, add pizza sauce, cheese, and toppings<br>
+                    Cover with another dough round<br>
+                    Close the waffle iron and cook for 3-5 minutes until golden and crispy<br>
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    
+                    Pizza Dough: Provides carbohydrates for energy<br>
+                    Mozzarella Cheese: High in calcium and protein for bone and muscle health<br>
+                    Tomato Sauce: Rich in antioxidants like lycopene, good for heart health<br>
+                    Olive Oil: Contains healthy fats that support heart health<br>
+                    </p>
+              </div>
+            
+
+              <div class="recipe-card">
+                <img src="7to105.webp" alt="Recipe 5">
+             
+                <h3>Biryani</h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    1 cup basmati rice<br>
+                    1/2 cup diced chicken or vegetables (carrots, peas)<br>
+                    1/4 cup chopped onions<br>
+                    1/4 tsp turmeric powder<br>
+                    1/2 tsp cumin seeds<br>
+                    1/4 tsp garam masala<br>
+                    1/2 tsp ginger-garlic paste<br>
+                    1 tbsp ghee or oil<br>
+                    Salt to taste<br>
+                    Fresh coriander for garnish<br>
+<ul><br>
+                    Process:<br>
+                    Wash and soak the rice for 20 minutes<br>
+Heat ghee in a pan, add cumin seeds, onions, and ginger-garlic paste<br>
+Sauté until onions turn golden<br>
+Add chicken or vegetables, turmeric, garam masala, and salt<br>
+Cook for 5 minutes, then add soaked rice and 2 cups of water<br>
+Cover and cook on low heat for 15-20 minutes until rice is fluffy<br>
+Garnish with fresh coriander and serve<br>
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    
+                    Basmati Rice: Provides energy through carbohydrates<br>
+Chicken/Vegetables: Rich in protein and essential vitamins<br>
+Turmeric: Contains anti-inflammatory properties<br>
+Ghee: Adds healthy fats for growth and development<br>
+                    </p>
+              </div>
+            
+
+              
+              <div class="recipe-card">
+                <img src="7to106.jpg" alt="Recipe 6">
+             
+                <h3>Dosa</h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    1 cup dosa batter (store-bought or homemade)<br>
+1/4 cup finely chopped carrots<br>
+1/4 cup finely chopped spinach<br>
+1 tbsp ghee or oil<br>
+Salt to taste (optional)<br>
+<ul><br>
+                    Process:<br>
+                    Heat a non-stick pan and grease it lightly with ghee<br>
+                    Pour a ladleful of dosa batter and spread it thin<br>
+                    Sprinkle chopped carrots and spinach over the dosa<br>
+                    Cook until crispy on one side, then fold and remove from the pan<br>
+                    Serve with chutney or yogurt<br>
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    
+                    Dosa Batter: Made from rice and lentils, offering protein and carbs<br>
+                    Carrots: Provide vitamins A and fiber<br>
+                    Spinach: Rich in iron and vitamins<br>
+                    Ghee: Adds healthy fats for energy and brain development<br>
+                    </p>
+              </div>
+
+              
+              <div class="recipe-card">
+                <img src="7to107.jpg" alt="Recipe 7">
+             
+                <h3>Tomato & Avocado Sandwiches
+
+                </h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    1/2 medium ripe avocado, peeled and mashed<br>
+
+4 slices whole wheat bread, toasted<br>
+
+1 medium tomato, sliced<br>
+
+2 tablespoons finely chopped shallot<br>
+
+1/4 cup hummus
+
+
+<ul><br>
+                    Process:<br><br>
+                    Spread avocado over 2 slices of toast.<br> Top with tomato and shallot. <br>Spread hummus over remaining toast slices; <br>place on top of avocado toast,<br> facedown on top of tomato layer.
+
+
+
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    sandwich: 278 calories, <br>11g fat (2g saturated fat),<br> 0 cholesterol,<br> 379mg sodium, <br>35g carbohydrate (6g sugars, 9g fiber),<br> 11g protein.<br> Diabetic Exchanges: 2 starch, 2 fat.
+                    </p>
+              </div>
+
+              <div class="recipe-card">
+                <img src="7to108.jpg" alt="Recipe 8">
+             
+                <h3>Garlic Bread Pizza Sandwiches
+
+                </h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    1 package (11-1/4 ounces) frozen garlic Texas toast<br>
+
+1/4 cup pasta sauce<br>
+
+4 slices provolone cheese<br>
+
+16 slices pepperoni<br>
+
+8 slices thinly sliced hard salami<br>
+
+Additional pasta sauce, warmed, optional<br>
+
+
+<ul><br>
+     Preheat griddle over medium-low heat.<br> Add garlic toast; cook until lightly browned, <br>3-4 minutes per side.<br>
+     Spoon 1 tablespoon sauce over each of 4 pieces of toast. <br>Top with cheese, pepperoni, salami and remaining toast. <br>Cook until crisp and cheese is melted, 3-5 minutes, <br>turning as necessary. If desired, serve with additional sauce.
+    
+    
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    1 sandwich: 456 calories, <br>28g fat (10g saturated fat), <br>50mg cholesterol, <br>1177mg sodium, <br>36g carbohydrate (4g sugars, 2g fiber),<br> 19g protein.
+                    </p>
+              </div>
+            
+
+              <div class="recipe-card">
+                <img src="7to109.jpg" alt="Recipe 9">
+             
+                <h3>Cheeseburger Cups
+                </h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    1 pound ground beef<br>
+
+                    1/2 cup ketchup<br>
+                    
+                    2 tablespoons brown sugar<br>
+                    
+                    1 tablespoon prepared mustard<br>
+                    
+                    1-1/2 teaspoons Worcestershire sauce<br>
+                    
+                    2 tubes (10-1/2 ounces each) large refrigerated buttermilk biscuits<br>
+                    
+                    1/2 cup cubed Velveeta
+                    
+                    
+                    
+                    
+<ul><br>
+                    Process:<br>
+                    In a large skillet, cook beef over medium heat until no longer pink,<br> breaking it into crumbles; drain. <br>Stir in the ketchup, brown sugar,<br> mustard and Worcestershire sauce. <br>Remove from the heat.
+ Press each biscuit onto the bottom and up the side of a greased muffin cup.<br> Spoon beef mixture into cups; top with cheese cubes.<br> Bake at 400° until cups are golden brown,<br> 14-16 minutes.
+
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                    1 cheeseburger cup: 299 calories,<br> 14g fat (5g saturated fat), <br>34mg cholesterol,<br> 910mg sodium, <br>32g carbohydrate (9g sugars, 1g fiber),<br> 13g protein.
+                    </p>
+              </div>
+
+              
+              <div class="recipe-card">
+                <img src="7to1010.jpg" alt="Recipe 10">
+             
+                <h3>PBJ on a Stick
+                </h3>
+                <p><strong>Age:</strong> 7-10 years</p>
+                <p>Ingredients:<br>
+                    2 peanut butter and jelly sandwiches<br>
+
+1 cup seedless red or green grapes<br>
+
+1 small banana, sliced<br>
+
+4 wooden skewers (5 to 6 inches)<br>
+
+
+<ul><br>
+                    Process:<br>
+                    Cut sandwiches into 1-in. squares.<br> Alternately thread grapes,<br> sandwich squares and banana slices onto each skewer. <br>Serve immediately.
+
+                 </ul><br>
+               
+                <p>Nutritional Benefits:<br>
+                     2 skewers: 415 calories, <br>14g fat (3g saturated fat),<br> 0 cholesterol,<br> 368mg sodium,<br> 63g carbohydrate (30g sugars, 7g fiber), <br>13g protein.
+                    </p>
+              </div>
+              
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kids' Recipes. All rights reserved.</p>
+    </footer>
+    <script>
+        
+const dropdowns = document.querySelectorAll('select');
+
+
+if (dropdowns.length > 1) {
+    for (let i = 1; i < dropdowns.length; i++) {
+        dropdowns[i].remove(); 
+    }
+}
+
+    
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids' Cooking Recipes</title>
+
+    <style>
+       /* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-color:#ffce67; 
+    text-align: center;
+    padding: 20px 20px;
+    color: #fff;
+}
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: cursive;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+    font-family: cursive;
+}
+.cta-button {
+    background-color: #2a9d8f;
+    color: orange;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Crisscross Content Sections */
+.content-section {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Apply row-reverse to every other section */
+.content-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+    padding: 20px;
+}
+.content-image {
+    flex: 1;
+    text-align: center;
+}
+.content-image img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+.content-text h3 {
+    font-size: 1.8em;
+    color: #e76f51;
+    margin-bottom: 15px;
+}
+.content-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-container:nth-child(even) {
+        flex-direction: column;
+    }
+}
+footer {
+    background-color: #ffce67;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer  {
+    color: #e51f0d;
+    text-align: center;}
+
+    </style>
+</head>
+<body>
+   
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>HOME PAGE</h2>
+            <p>Welcome to <strong>kids cooking website</strong> <br> Cooking website for kids recipes is very helpful to new mothers.</p>
+            <a href="re.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Crisscross Content Sections -->
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-text">
+                <h3>TO NEW MOMS</h3>
+                <p>It involves food 
+                    recipes step by step and benefits of that food , and other the 
+                    carbohydrates,protein,vitamins of that food. <br>
+                    As a parent, you want the best for your child, and that includes serving 
+                    them healthy, tasty meals that foster a lifelong love for good food.<br>
+                    In this collection of kids' food recipes, we've gathered a treasure trove of 
+                    easy-to-make, kid-friendly dishes that are perfect for breakfast, lunch, 
+                    dinner, or snack time. From classic favorites to creative twists.<br>
+                    <p><br>
+                </p>
+            </div>
+            <div class="content-image">
+                <img src="home1.jpeg" alt="1">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-image">
+                <img src="HOME2.jpeg" alt="2">
+            </div>
+            <div class="content-text">
+                <h3> WHY COOK WITH US ?
+                </h3>
+                <p><li>Develop essential life skills and confidence in the kitchen</li>
+                    <li>
+                        Learn about different cultures and cuisines
+                    </li>
+                    <li> Make healthy choices and understand nutrition
+                    
+                    </li>
+                    <li>Spend quality time with family and friends
+                    
+                    </li>
+                    <li>Unleash your creativity and have FUN!
+                    
+                    </li>
+                    
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-text">
+                <h3>ON  OUR WEBSITE YOU'LL FIND</h3>
+                <p><li>Easy-to-follow recipes perfect for kids of all ages and skill levels</li>
+                    <li>Fun cooking videos and tutorials</li>
+                    <li>Colorful pictures and step-by-step instructions</li>
+                    <li>Healthy eating tips and nutrition facts</li>
+                    <li>Special features on food safety, kitchen essentials, and cooking techniques</li>
+                    
+                    </p>
+            </div>
+            <div class="content-image">
+                <img src="HOME3.jpeg" alt="3">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Kids' Recipes. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
