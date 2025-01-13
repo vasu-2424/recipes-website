@@ -1,4 +1,24 @@
-/* Basic Reset */
+/* Basic Reset */nav {
+  display: flex;
+  justify-content: space-around; /* Aligns items evenly */
+  align-items: center; /* Centers vertically */
+  background-color: #f8f9fa; /* Optional: Navbar background color */
+  padding: 10px 20px; /* Optional: Padding around buttons */
+}
+
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Text color */
+  padding: 10px 15px; /* Spacing inside buttons */
+  border-radius: 5px; /* Optional: Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+nav a:hover {
+  background-color: #e7e7e7; /* Optional: Hover effect */
+  color: #000; /* Optional: Text color on hover */
+}
+
 * {
     margin: 0;
     padding: 0;
